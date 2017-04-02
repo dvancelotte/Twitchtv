@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    <title>Twitchtv</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript"  src="js/tv.js"> </script>
+    <script>
+      
+        function online(){
+            $(".undefined").hide();
+            $(".offline").hide();
+            $(".online").show();
+        }   
+        function offline(){
+            $(".undefined").hide();
+            $(".offline").show();
+            $(".online").hide();
+        } 
+        function showAll(){
+            $(".undefined").show();
+            $(".offline").show();
+            $(".online").show();
+       }
+      
+      
+    </script>
+    
+  
+    
+</head>
+  <body>
+      
+      
+      <div class ="contanier twitchtv" id="twitchtv">
+          
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 ">
+                <img  class="img-responsive" id="logo" src="twitchtv.png">            
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 divMenu">
+                  <ul class="nav nav-tabs">
+                    <li class="active" onclick="showAll();"><a data-toggle="tab" href="#" id="tabAll">All</a></li>
+                    <li id="tabOnline" onclick="online();"><a data-toggle="tab" href="#">Online</a></li>
+                    <li onclick="offline();"><a data-toggle="tab" href="#Offline">Offline</a></li>
+                  </ul>  
+            </div>
+          </div>
+          
+        
+        
+      </div>
+      <div class="contanier">
+      
+      <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 rodape">
+                    <p>@dvancelotte</p>                    
+              </div>  
+          </div>
+      </div>
+        
+     
+  </body>
+</html>
